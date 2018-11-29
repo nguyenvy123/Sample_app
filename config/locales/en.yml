@@ -4,13 +4,34 @@ en:
     application:
       title: "Application"
       basetitle: "| Ruby on Rails Tutorial Sample App"
+      sample: "Sample App"
+      home: "Home"
+      help: "Help"
+      login: "Log In"
+    header:
+      title: "Sample app"
+      home: "Home"
+      help: "Help"
+      login: "Log In"
+    footer:
+      announce_footer_html: "The %{tutorial} by %{book}"
+      tutorial_link: "http://www.railstutorial.org"
+      tutorial_link_detail: "Ruby on Rails Tutorial"
+      book_link: "http://www.michaelhartl.com"
+      book_link_detail: "Michael Hartl"
+      about: "About"
+      contact: "Contact"
+      new_link: "http://news.railstutorial.org"
+      new_link_detail: "New"
   static_pages:
     home: 
       title: "Home"
-      h1: "Sample App"
+      h1: "Wellcome To The Sample App"
       announce_home_html: "This is the home page for the %{href} sample application."
       link_detail: "Ruby on Rails Tutorial"
       link: "http://www.railstutorial.org/"
+      sign: "Sign Up Now!"
+      logo: "Rails Logo"
     help:
       title: "Help"
       announce_help_html: "Get help on the Ruby on Rails Tutorial at the %{help}. To get help on this sample app, see the %{book}"
@@ -35,3 +56,8 @@ en:
       announce_contact_html: "Contact the Ruby on Rails Tutorial about the sample app at the %{href}"
       link_detail: "contact page"
       link: "http://www.railstutorial.org/contact"
+  users:
+    new:
+      title: "Sign Up"
+      h1: "Sample App"
+      p: "This will be a sign up page for new users"

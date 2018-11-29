@@ -230,7 +230,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (= 3.1.12)
   bootsnap (>= 1.1.0)
-  bootstrap-sass (~> 3.3, >= 3.3.7)
+  bootstrap-sass (= 3.3.7)
   byebug (~> 9.0, >= 9.0.5)
   capybara (>= 2.15)
   chromedriver-helper
