@@ -1,63 +1,33 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
 en:
   hello: "Hello world"
-  layouts:
-    application:
-      title: "Application"
-      basetitle: "| Ruby on Rails Tutorial Sample App"
-      sample: "Sample App"
-      home: "Home"
-      help: "Help"
-      login: "Log In"
-    header:
-      title: "Sample app"
-      home: "Home"
-      help: "Help"
-      login: "Log In"
-    footer:
-      announce_footer_html: "The %{tutorial} by %{book}"
-      tutorial_link: "http://www.railstutorial.org"
-      tutorial_link_detail: "Ruby on Rails Tutorial"
-      book_link: "http://www.michaelhartl.com"
-      book_link_detail: "Michael Hartl"
-      about: "About"
-      contact: "Contact"
-      new_link: "http://news.railstutorial.org"
-      new_link_detail: "New"
-  static_pages:
-    home: 
-      title: "Home"
-      h1: "Wellcome To The Sample App"
-      announce_home_html: "This is the home page for the %{href} sample application."
-      link_detail: "Ruby on Rails Tutorial"
-      link: "http://www.railstutorial.org/"
-      sign: "Sign Up Now!"
-      logo: "Rails Logo"
-    help:
-      title: "Help"
-      announce_help_html: "Get help on the Ruby on Rails Tutorial at the %{help}. To get help on this sample app, see the %{book}"
-      link_help_detail: "Rails Tutorial help page"
-      link_help: "http://www.railstutorial.org/help"
-      link_book: "http://www.railstutorial.org/book"
-      link_book_detail: "Ruby on Rails Tutorial book."
-    about:
-      title: "About"
-      announce_about_html: "The %{tutorial} is a %{book} and %{screencast} to teach web development with %{rails}. This is the sample application for the tutorial."
-      tutorial_link: "http://www.railstutorial.org/"
-      tutorial_link_detail: "Ruby on Rails Tutorial"
-      book_link: "http://www.railstutorial.org/book"
-      book_link_detail: "book"
-      screencast_link: "http://screencasts.railstutorial.org/"
-      screencast_link_detail: "screencast series"
-      rails_link: "http://rubyonrails.org/"
-      rails_link_detail: "Ruby on Rails"
-    contact:
-      title: "Contact"
-      h1: "Contact"
-      announce_contact_html: "Contact the Ruby on Rails Tutorial about the sample app at the %{href}"
-      link_detail: "contact page"
-      link: "http://www.railstutorial.org/contact"
-  users:
-    new:
-      title: "Sign Up"
-      h1: "Sample App"
-      p: "This will be a sign up page for new users"
