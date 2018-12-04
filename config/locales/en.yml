@@ -1,5 +1,7 @@
 en:
   hello: "Hello world"
+  success: "Sign up success"
+  danger: "load_user.error_messages"
   layouts:
     application:
       title: "Application"
@@ -23,6 +25,11 @@ en:
       contact: "Contact"
       new_link: "http://news.railstutorial.org"
       new_link_detail: "New"
+  shared:
+    form: "The form contains %{error_list}"
+    error:
+      one: "1 error"
+      other: "%{count} errors"
   static_pages:
     home: 
       title: "Home"
@@ -58,6 +65,14 @@ en:
       link: "http://www.railstutorial.org/contact"
   users:
     new:
+      confimation: "Confirmation"
+      create: "Create my account"
       title: "Sign Up"
       h1: "Sample App"
       p: "This will be a sign up page for new users"
+      success: "Sign up success"
+      danger: "load_user.error_messages"
+    create:
+      success: "Wellcome to sample app"
+    load_user:
+      danger: "load_user.error_messages"
