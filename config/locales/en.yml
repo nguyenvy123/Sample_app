@@ -11,10 +11,15 @@ en:
       help: "Help"
       login: "Log In"
     header:
+      account: "Account"
       title: "Sample app"
       home: "Home"
       help: "Help"
       login: "Log In"
+      user: "Users"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
     footer:
       announce_footer_html: "The %{tutorial} by %{book}"
       tutorial_link: "http://www.railstutorial.org"
@@ -63,6 +68,12 @@ en:
       announce_contact_html: "Contact the Ruby on Rails Tutorial about the sample app at the %{href}"
       link_detail: "contact page"
       link: "http://www.railstutorial.org/contact"
+  sessions:
+    new:
+      login: "Log in"
+      sign: "Sign up now"
+      sign_up_html: "New user? %{href}"
+      sign_up_detail: "Sign up now!"
   users:
     new:
       confimation: "Confirmation"
@@ -74,5 +85,6 @@ en:
       danger: "load_user.error_messages"
     create:
       success: "Wellcome to sample app"
+      invalid: "Invalid email/password combination"
     load_user:
       danger: "load_user.error_messages"
