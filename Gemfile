@@ -15,6 +15,8 @@ gem "rubocop", "~> 0.54.0", require: false
 gem "sass-rails", "~> 5.0"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
+
+gem "config"
 group :development, :test do
   gem "byebug", "~> 9.0", ">= 9.0.5"
   gem "sqlite3"
