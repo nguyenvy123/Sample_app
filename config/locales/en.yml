@@ -74,6 +74,7 @@ en:
       sign: "Sign up now"
       sign_up_html: "New user? %{href}"
       sign_up_detail: "Sign up now!"
+      remember: "Remember me on this computer"
   users:
     new:
       confimation: "Confirmation"
