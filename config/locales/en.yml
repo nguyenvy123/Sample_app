@@ -76,6 +76,16 @@ en:
       sign_up_detail: "Sign up now!"
       remember: "Remember me on this computer"
   users:
+    edit:
+      title: "Edit user"
+      save: "Save changes"
+      update: "Update your profile"
+      change: "Change"
+      gravatar_link: "http://gravatar.com/emails"
+    user:
+      Delete: "Delete"
+      confirm: "You sure?"
+      title: "All Users"
     new:
       confimation: "Confirmation"
       create: "Create my account"
@@ -89,3 +99,10 @@ en:
       invalid: "Invalid email/password combination"
     load_user:
       danger: "load_user.error_messages"
+    update:
+      update_success: "Profile updated"
+    destroy:
+      destroy_success: "User deleted"
+      destroy_fail: "Delete fail"
+    logged_in_user:
+      danger_login: "Please log in."
