@@ -7,7 +7,8 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX},
     uniqueness: {case_sensitive: false}
   has_secure_password
-  validates :password, presence: true, length: {minimum: Settings.pass_min_length}
+  validates :password, presence: true, length: {minimum: Settings.pass_min_length},
+    allow_nil: true
   
   class << self
     def digest(string)
@@ -33,5 +34,10 @@ class User < ApplicationRecord
 
   def forget
     update_attribute(:remember_digest, nil)
+  end
+
+  def log_out
+    session.delete :user_id
+    @current_user = nil
   end
 end

@@ -2,7 +2,7 @@ require "test_helper"
 
 class UsersLoginTest < ActionDispatch::IntegrationTest
   def setup
-    @user = users(:nguyenvy)
+    @user = users :michael
   end
   test "login with invalid information" do
     get login_path
@@ -34,12 +34,12 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", user_path(@user), count: 0
   end
   test "login with remembering" do
-    log_in_as(@user, remember_me: "1")
+    log_in_as(@user, remember_me: Settings.remember_1)
     assert_not_empty cookies["remember_token"]
   end
   test "login without remembering" do
-    log_in_as(@user, remember_me: "1")
-    log_in_as(@user, remember_me: "0")
+    log_in_as(@user, remember_me: Settings.remember_1)
+    log_in_as(@user, remember_me: Settings.remember_0)
     assert_empty cookies["remember_token"]
   end
 end
