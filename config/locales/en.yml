@@ -94,7 +94,11 @@ en:
       p: "This will be a sign up page for new users"
       success: "Sign up success"
       danger: "load_user.error_messages"
+      hi: "Hi"
+      wellcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
     create:
+      info: "Please check your email to activate your account."
       success: "Wellcome to sample app"
       invalid: "Invalid email/password combination"
     load_user:
@@ -106,3 +110,10 @@ en:
       destroy_fail: "Delete fail"
     logged_in_user:
       danger_login: "Please log in."
+  account:
+    success: "Account activated!"
+    danger: "Invalid activation link"
+    message: "Account not activated."
+  mailer:
+    subject: "Account activation"
+    
