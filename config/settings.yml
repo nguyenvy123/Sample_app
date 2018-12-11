@@ -6,3 +6,4 @@ remember_1: 1
 remember_0: 0
 user:
   size: 50
+  exprire: 2

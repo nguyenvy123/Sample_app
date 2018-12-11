@@ -10,8 +10,7 @@
 
     <div class="gravatar_edit">
       <%= gravatar_for @user %>
-      <%= link_to t("users.edit.change"), t("users.edit.gavatar_link"),
-        target: "_blank" %>
+      <a href=<%= t("users.edit.gravatar_link") %> target="_blank"><%= t("users.edit.change") %></a>
     </div>
   </div>
 </div>
