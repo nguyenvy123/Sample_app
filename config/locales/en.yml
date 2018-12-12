@@ -35,6 +35,13 @@ en:
     error:
       one: "1 error"
       other: "%{count} errors"
+    micropost:
+      content: "Compose new micropost..."
+      post: "Post"
+      accept: "image/jpeg,image/gif,image/png"
+    user:
+      view: "view my profile"
+      micro: "micropost"
   static_pages:
     home: 
       title: "Home"
@@ -44,6 +51,7 @@ en:
       link: "http://www.railstutorial.org/"
       sign: "Sign Up Now!"
       logo: "Rails Logo"
+      feed: "Micropost Feed"
     help:
       title: "Help"
       announce_help_html: "Get help on the Ruby on Rails Tutorial at the %{help}. To get help on this sample app, see the %{book}"
@@ -90,8 +98,10 @@ en:
       update: "Update your profile"
       change: "Change"
       gravatar_link: "http://gravatar.com/emails"
+    show:
+      micro: "Microposts"
     user:
-      Delete: "Delete"
+      delete: "Delete"
       confirm: "You sure?"
       title: "All Users"
     new:
@@ -128,6 +138,13 @@ en:
     success: "Account activated!"
     danger: "Invalid activation link"
     message: "Account not activated."
+  application:
+    danger: "Please log in."
+  micropost:
+    create: "Micropost created!"
+    delete: "Micropost deleted"
+    nodelete: "Micropost not deleted"
+    error_picture: "should be less than 5MB"
   mailer:
     subject1: "Account activation"
     subject2: "Password reset"
@@ -138,3 +155,11 @@ en:
     success: "Password has been reset."
     danger2: "Password reset has expired."
     danger3: "Users can't be found"
+  microposts:
+    micropost:
+      post: "Posted"
+      ago: "ago."
+      delete: "delete"
+      sure: "You sure?"
+      max: "Maximum file size is 5MB. Please choose a smaller file."
+      

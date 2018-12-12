@@ -4,6 +4,9 @@ pass_min_length: 6
 size: 80
 remember_1: 1
 remember_0: 0
+content_max: 140
+picture_size: 5
 user:
   size: 50
   exprire: 2
+  per_page: 20
