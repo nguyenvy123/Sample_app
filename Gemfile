@@ -3,6 +3,8 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 ruby "2.5.3"
 gem "bcrypt", "3.1.12"
 gem "faker", "1.7.3"
+gem "carrierwave", "1.2.2"
+gem "mini_magick", "4.7.0"
 gem "will_paginate", "3.1.6"
 gem "bootstrap-will_paginate", "1.0.0"
 gem "bootsnap", ">= 1.1.0", require: false
@@ -12,6 +14,7 @@ gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
 gem "jquery-ui-rails"
 gem "puma", "~> 3.11"
+gem "i18n-js"
 gem "rails", "~> 5.2.1"
 gem "rails-controller-testing"
 gem "rubocop", "~> 0.54.0", require: false
@@ -37,5 +40,6 @@ group :test do
 end
 group :production do
   gem "pg"
+  gem "fog", "1.42"
 end
 gem "tzinfo-data", "~> 1.2017", ">= 1.2017.2"
