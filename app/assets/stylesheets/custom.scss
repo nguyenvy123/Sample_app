@@ -1,9 +1,21 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
 
-$very-light-gray: #e8e8e8;
+/* mixins, variables, etc. */
+$gray: #555;
+$gray-light: #777;
+$gray-medium-light: #eaeaea;
+$gray-darker: #222;
+$gray-white: #e8e8e8;
+$gray-black: #bbb;
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* universal */
-
 body {
   padding-top: 60px;
 }
@@ -18,14 +30,12 @@ textarea {
 
 .center {
   text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
+  h1 {
+    margin-bottom: 10px;
+  }
 }
 
 /* typography */
-
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
@@ -43,7 +53,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: $gray-light;
 }
 
 p {
@@ -52,7 +62,6 @@ p {
 }
 
 /* header */
-
 #logo {
   float: left;
   margin-right: 10px;
@@ -62,11 +71,10 @@ p {
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
-}
-
-#logo:hover {
+  &:hover {
   color: #fff;
   text-decoration: none;
+  }
 }
 
 /* footer */
@@ -74,63 +82,39 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
+  border-top: 1px solid $gray-medium-light;
+  color: $gray-light;
+  a {
+    color: gray;
+    &:hover {
+      color: #gray-darker;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
 }
 
-footer a {
-  color: #555;
-}
-
-footer a:hover {
-  color: #222;
-}
-
-footer small {
+/* miscellaneous */
+.debug_dump {
+  clear: both;
   float: left;
-}
-
-footer ul {
-  float: right;
-  list-style: none;
-}
-
-footer ul li {
-  float: left;
-  margin-left: 15px;
-}
-
-@mixin box_sizing {
+  width: 100%;
+  margin-top: 45px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* miscellaneous */
-
-.debug_dump {
-  clear: both;
-  float: left;
-  width: 100%;
-  margin-top: 50px;
-  @include box_sizing;
-}
-
-/* forms */
-
-input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
-  width: 100%;
-  margin-bottom: 15px;
-  @include box_sizing;
-}
-
-input {
-  height: auto !important;
-}
-
 /* sidebar */
-
 aside {
   section.user_info {
     margin-top: 20px;
@@ -166,6 +150,58 @@ aside {
   margin-top: 15px;
 }
 
+.stats {
+  overflow: auto;
+  margin-top: 0;
+  padding: 0;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $gray-lighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+  a {
+    padding: 0;
+  }
+}
+
+.users.follow {
+  padding: 0;
+}
+
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid $gray-black;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
 #error_explanation {
   color: red;
   ul {
@@ -196,7 +232,6 @@ aside {
 }
 
 /* Users index */
-
 .users {
   list-style: none;
   margin: 0;
@@ -208,13 +243,12 @@ aside {
 }
 
 /* microposts */
-
 .microposts {
   list-style: none;
   padding: 0;
   li {
-    padding: 10px 0;
-    border-top: 1px solid $very-light-gray;
+    padding: 10px 0 25px 0px;
+    border-top: 1px solid $gray-white;
   }
   .user {
     margin-top: 5em;
@@ -236,7 +270,7 @@ aside {
   .gravatar {
     float: left;
     margin-right: 10px;
-    margin-top: 5px;
+    
   }
 }
 

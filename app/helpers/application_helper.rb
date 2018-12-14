@@ -1,6 +1,10 @@
 module ApplicationHelper
   def full_title page_title
-    base_title = t "layouts.basetitle"
-    page_title.blank ? base_title : page_title + " | " + base_title
+    base_title = I18n.t "layouts.application.basetitle"
+    if page_title.blank?
+      base_title
+    else
+      page_title + " | " + base_title
+    end
   end
 end

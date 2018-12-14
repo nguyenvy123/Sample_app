@@ -19,6 +19,8 @@ class MicropostsController < ApplicationController
       redirect_to request.referrer || root_path
     else
       flash[:danger] = t "micropost.nodelete"
+      redirect_to root_path
+    end
   end
 
   private

@@ -5,7 +5,7 @@ en:
   layouts:
     application:
       title: "Application"
-      basetitle: "| Ruby on Rails Tutorial Sample App"
+      basetitle: "Ruby on Rails Tutorial Sample App"
       sample: "Sample App"
       home: "Home"
       help: "Help"
@@ -38,7 +38,6 @@ en:
     micropost:
       content: "Compose new micropost..."
       post: "Post"
-      accept: "image/jpeg,image/gif,image/png"
     user:
       view: "view my profile"
       micro: "micropost"
@@ -100,6 +99,8 @@ en:
       gravatar_link: "http://gravatar.com/emails"
     show:
       micro: "Microposts"
+      view: "view my profile"
+      micro1: "Microposts:"
     user:
       delete: "Delete"
       confirm: "You sure?"
@@ -134,6 +135,9 @@ en:
       destroy_fail: "Delete fail"
     logged_in_user:
       danger_login: "Please log in."
+    follows:
+      follow: "follow"
+      unfollow: "Unfollow"
   account:
     success: "Account activated!"
     danger: "Invalid activation link"
@@ -162,4 +166,9 @@ en:
       delete: "delete"
       sure: "You sure?"
       max: "Maximum file size is 5MB. Please choose a smaller file."
+  relationship:
+    create:
+      nouser: "You haven't logged in"
+      nounfollow: "You can unfollow"
+      norelationship: "No have relationship"
       
