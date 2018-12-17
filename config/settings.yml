@@ -10,3 +10,6 @@ user:
   size: 50
   exprire: 2
   per_page: 20
+  size_2: 30
+image:
+  accept: "image/jpeg,image/gif,image/png"
